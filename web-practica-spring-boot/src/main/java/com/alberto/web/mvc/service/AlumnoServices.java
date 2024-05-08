@@ -10,5 +10,9 @@ public interface AlumnoServices {
 	public List<Alumno> listadoDeAlumnos();
 	
 	public Alumno guardarAlumno(Alumno alumno);
+	
+	public Alumno obtenerAlumnoId(Long id);
+	
+	public void eliminarAlumno (Long id);
 
 }

@@ -24,4 +24,14 @@ public class AlumnoServicesImpl implements AlumnoServices{
 	public Alumno guardarAlumno(Alumno alumno) {
 		return repositorio.save(alumno);
 	}
+	
+	@Override
+	public Alumno obtenerAlumnoId(Long id) {
+		return repositorio.findById(id).get();
+	}
+	
+	@Override
+	public void eliminarAlumno(Long id) {
+		repositorio.deleteById(id);
+	}
 }
