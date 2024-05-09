@@ -11,11 +11,9 @@
 	
 	<ul class="nav justify-content-center nav-underline">
 	  <li class="nav-item">
-	    <a class="nav-link" aria-current="page" th:href=@{/alumnos}  >Alumnos</a>
+	    <a class="nav-link" aria-current="page" th:href=@{/alumnos}  >Listado de Alumnos</a>
 	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link"  th:href=@{/alumnos/new} >NuevoAlumno</a>
-	  </li>
+
 	</ul>
 	
 	
@@ -57,7 +55,8 @@
 					  <br>
 					  
 					  <div class="box-footer">
-						<button class="btn btn-primary">Guardar</button>
+						<button class="btn btn-success">Guardar</button>
+						<a th:href="@{/alumnos}" class="btn btn-danger">Cancelar</a>
 					  </div>
 					 
 					</form>
