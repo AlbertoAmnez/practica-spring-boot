@@ -7,22 +7,16 @@
     <title>Nuevo Alumno</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-	
 	<ul class="nav justify-content-center nav-underline">
-	  <li class="nav-item">
-	    <a class="nav-link" aria-current="page" th:href=@{/alumnos}  >Listado de Alumnos</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link"  th:href=@{/alumnos/new} >Añadir nuevo Alumno</a>
-	  </li>
 	</ul>
-	
-	
 	<div class="container">
-		<div class="row">
-			<h1>Editar Alumno</h1>
-	
+		<brdiv class="row">
+			<center style="padding: 10px;">
+				<h1>Editar Alumno</h1>
+				</center>
+				</br>
 			<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
 				
 			
@@ -56,6 +50,7 @@
 						  </br>
 						  <div class="box-footer">
 	  						<button class="btn btn-primary">Guardar</button>
+							<a th:href="@{/alumnos}" class="btn btn-danger">Cancelar</a>
 	  					  </div>
  
 					</form>
